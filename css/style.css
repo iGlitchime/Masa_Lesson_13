@@ -9,10 +9,9 @@ header {
 }
 
 .header {
-    /*height: 750px;*/
-    /*width: 100%;*/
     background: url('../img/bg.png') no-repeat center;
     padding: 0 15%;
+    background-size: cover;
 }
 
 .navbar {
@@ -40,7 +39,7 @@ header {
     cursor: pointer;
 }
 
-.block_first {
+.header_block {
     padding: 156px 100px;
     text-align: center;
 }
@@ -69,3 +68,68 @@ header {
     font: 600 13px/1.62em Raleway;
     color: #ffffff;
 }
+
+/* Second Block*/
+.advantages {
+    height: 690px;
+    width: 100%;
+    background: white;
+}
+
+.advantages_grid {
+    margin: 120px 15%;
+}
+
+.advantages_grid_item {
+    position: relative;
+    margin: 20px;
+}
+.works_grid_item_overlay, .works_grid_item_title,.works_grid_item_txt{
+    /*opacity: 0;*/
+    padding: 150px;
+
+}
+
+.advantages_grid_item:hover .works_grid_item_overlay{
+    opacity: 1;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,0,0, 0.5);
+}
+.advantages_grid_item:hover .works_grid_item_title{
+
+}
+
+
+
+.advantages_icon {
+    width: 73px;
+    height: 60px;
+    margin-bottom: 35px;
+}
+
+.advantages_icon img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.advantages_title {
+    font: bold 14px Raleway;
+    text-align: center;
+    color: #2d3033;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.advantages_txt {
+    font: 14px/1.5em Raleway;
+    text-align: center;
+    color: #6c7279;
+    margin-bottom: 25px;
+}
+
+
