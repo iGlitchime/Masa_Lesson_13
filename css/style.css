@@ -3,10 +3,10 @@
     margin: 0;
 }
 
-header {
-    height: 750px;
-    width: 100%;
-}
+/*header {*/
+    /*height: 750px;*/
+    /*width: 100%;*/
+/*}*/
 
 .header {
     background: url('../img/bg.png') no-repeat center;
@@ -71,7 +71,6 @@ header {
 
 /* Second Block*/
 .advantages {
-    height: 690px;
     width: 100%;
     background: white;
 }
@@ -84,38 +83,18 @@ header {
     position: relative;
     margin: 20px;
 }
-.works_grid_item_overlay, .works_grid_item_title,.works_grid_item_txt{
-    /*opacity: 0;*/
-    padding: 150px;
-
-}
-
-.advantages_grid_item:hover .works_grid_item_overlay{
-    opacity: 1;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,0,0, 0.5);
-}
-.advantages_grid_item:hover .works_grid_item_title{
-
-}
-
-
 
 .advantages_icon {
-    width: 73px;
+    width: 70px;
     height: 60px;
     margin-bottom: 35px;
 }
 
-.advantages_icon img {
-    width: 100%;
-    height: 100%;
+/*.advantages_icon img {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
 
-}
+/*}*/
 
 .advantages_title {
     font: bold 14px Raleway;
@@ -132,4 +111,72 @@ header {
     margin-bottom: 25px;
 }
 
+.works{
+    margin-bottom:20px;
+}
+.works_grid {
+    width: 100%;
+    border: 2px solid darkred;
+    /*position: relative;*/
+}
 
+.works_grid_item {
+    position: relative;
+    box-sizing: border-box;
+    max-height: 250px;
+}
+
+.works_grid_item img {
+    width: 100%;
+    height: 100%;
+}
+
+.works_grid_item_overlay, .works_grid_item_title, .works_grid_item_txt, .works_grid_item_content{
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: transparent;
+}
+
+.works_grid_item_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.works_grid_item_content{
+    opacity: 1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all .3s ease-out;
+}
+
+.works_grid_item:hover .works_grid_item_overlay {
+    opacity: 1;
+    transition: all .3s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.works_grid_item_title{
+    font: bold 14px Raleway;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.works_grid_item_txt{
+    font: 100 14px Raleway;
+    text-align: center;
+    color: #ffffff;
+}
+.works_grid_item:hover .works_grid_item_txt, .works_grid_item:hover .works_grid_item_title, .works_grid_item:hover .works_grid_item_content {
+    opacity: 1;
+    transition: all .3s ease-out;
+}
