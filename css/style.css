@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-/*header {*/
-/*height: 750px;*/
-/*width: 100%;*/
-/*}*/
-
 .header {
     background: url('../img/bg.png') no-repeat center;
     padding: 0 15%;
@@ -15,7 +10,6 @@
 }
 
 .navbar {
-    /*height: 100px;*/
     padding: 40px 0;
     border-bottom: 1px solid grey;
 }
@@ -31,9 +25,10 @@
 }
 
 .point {
-    /*border: 1px solid red;*/
     opacity: 0.75;
-    font: bold 13px Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
     text-align: left;
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
@@ -45,7 +40,9 @@
 }
 
 .header_title {
-    font: bold 45px/1.09em "Open Sans";
+    font-family: 'OpenSans', sans-serif;
+    font-weight: bold;
+    font-size: 45px line-height : 1.09 em;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
@@ -53,9 +50,12 @@
 
 .header_announce {
     margin: 41px 0 77px;
-    font: 22px/1.5em Raleway;
+    font-size: 22px;
+    line-height: 1.5em;
     text-align: center;
     color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 .red_button {
@@ -65,7 +65,11 @@
     text-align: center;
     min-width: 200px;
     border: 1px solid #e84545;
-    font: 600 13px/1.62em Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.62em;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
@@ -90,14 +94,10 @@
     margin-bottom: 35px;
 }
 
-/*.advantages_icon img {*/
-/*width: 100%;*/
-/*height: 100%;*/
-
-/*}*/
-
 .advantages_title {
-    font: bold 14px Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
     text-align: center;
     color: #2d3033;
     text-transform: uppercase;
@@ -105,26 +105,34 @@
 }
 
 .advantages_txt {
-    font: 14px/1.5em Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 300;
     text-align: center;
     color: #6c7279;
     margin-bottom: 25px;
 }
-
-.works {
-    /*margin-bottom: 20px;*/
+.works{
+    position: relative;
 }
-
 .works_grid {
     width: 100%;
-    border: 2px solid darkred;
-    /*position: relative;*/
 }
 
 .works_grid_item {
     position: relative;
     box-sizing: border-box;
     max-height: 250px;
+    border: .5px solid grey;
+}
+
+.works_grid_item:first-child {
+    border-left: none;
+}
+
+.works_grid_item:last-child {
+    border-right: none;
 }
 
 .works_grid_item img {
@@ -151,9 +159,10 @@
     opacity: 1;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%);
+    text-align: center;
+    transform: translateY(-50%);
     transition: all .3s ease-out;
+    margin: 0 auto;
 }
 
 .works_grid_item:hover .works_grid_item_overlay {
@@ -168,14 +177,21 @@
 }
 
 .works_grid_item_title {
-    font: bold 14px Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.62em;
+
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 .works_grid_item_txt {
-    font: 100 14px Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.62em;
     text-align: center;
     color: #ffffff;
 }
@@ -196,16 +212,24 @@
 }
 
 .footer-item-title {
-    font: bold 14px Raleway;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+
     text-align: center;
     color: #ffffff;
     margin: 20px 0;
 }
 
 .footer-item-content {
-    font: 14px/1.64em Raleway;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.64em;
+    font-weight: 300;
     text-align: center;
-    width: 270px;
+    max-width: 270px;
 }
 
 .footer_txt {
@@ -231,7 +255,10 @@
 }
 
 .copyright-txt, .copyright-author {
-    font: 14px/1.64em Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.64em;
+
     text-align: center;
     color: #808080;
 }
@@ -245,3 +272,20 @@
     color: #ffffff;
 }
 
+.form{
+    height: 0;
+    width: 100%;
+    background: mediumaquamarine;
+    transform: translateY(-50%);
+    transition: all 3s ease;
+}
+.form_open_button{
+    position: absolute;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 15%;
+}
+.opened{
+    height: 200px;
+    transition: all 3s ease;
+}
