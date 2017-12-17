@@ -273,19 +273,44 @@
 }
 
 .form{
-    height: 0;
+    display: none;
     width: 100%;
     background: mediumaquamarine;
-    transform: translateY(-50%);
-    transition: all 3s ease;
+    text-align: center;
+    padding: 20px;
+    /*transform: translateY(-50%);*/
+    /*transition: all 3s ease;*/
+}
+#personalInfo{
+    border: none;
+}
+.form-title, .label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 5px;
+    color: #ffffff;
+}
+.form-inputs{
+    margin: 5px;
 }
 .form_open_button{
     position: absolute;
+    z-index: 5;
+    right: 0;
     padding: 10px;
     background-color: grey;
     border-radius: 15%;
 }
 .opened{
-    height: 200px;
+    display: block;
     transition: all 3s ease;
+    background-color: #313454;
+
+}
+.button{
+    margin-top: 15px;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 1.5em;
 }

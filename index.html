@@ -197,17 +197,18 @@
 
 <div class="form" id="form">
 
-    <form id="frmContact" name="frmContact" method="post" action="thanks.htm">
+    <form id="frmContact" name="frmContact" method="post">
         <fieldset id="personalInfo">
-            <legend><strong>Have questions? Feel free to write us</strong></legend>
-            <p>
-                <label for="name">Name</label>
+            <legend class="form-title"><strong>Have questions? Feel free to write us</strong></legend>
+            <p class="form-inputs">
+                <label for="name" class="label">Name</label>
                 <input name="name" type="text" class="text" id="name" tabindex="100" />
             </p>
-            <p>
-                <label for="email">Email</label>
+            <p class="form-inputs">
+                <label for="email" class="label">Email</label>
                 <input name="email" type="text" class="text" id="email" tabindex="110" />
             </p>
+            <button id='button' class="red_button button">Try IT!</button>
         </fieldset>
     </form>
 </div>
