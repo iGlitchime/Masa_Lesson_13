@@ -303,6 +303,7 @@
     border-radius: 15%;
 }
 .opened{
+
     display: block;
     transition: all 3s ease;
     background-color: #313454;
